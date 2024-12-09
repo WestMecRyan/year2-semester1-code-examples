@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      footer {
+        display: flex;
+        flex-direction: row;
+        background-color: lightgray;
+        width: 100%;
+        min-height: 10vw;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        justify-content: space-between;
+        align-items: start;
+      }
+      footer > div {
+        min-height: 100%;
+        text-align: center;
+      }
+      div#one {
+        color: blue;
+        flex: 1;
+        background-color: lightblue;
+      }
+      #two {
+        flex: 2;
+        background-color: lightgreen;
+      }
+      #three {
+        flex: 4;
+        background-color: lightyellow;
+      }
+      .social-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    </style>
+  </head>
+  <body>
+    <footer>
+      <div id="one">GROW U</div>
+      <div id="two">
+        <h2>USEFUL LINKS</h2>
+        <ul>
+          <li>hello</li>
+          <li>there</li>
+          <li>friends</li>
+        </ul>
+      </div>
+      <div id="three">
+        <h2>SOCIAL CONTACTS</h2>
+        <div class="social-icons">
+          <span>icon 1</span><span>icon 2</span><span>icon 3</span>
+          <span>icon 4</span><span>icon 5</span><span>icon 6</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

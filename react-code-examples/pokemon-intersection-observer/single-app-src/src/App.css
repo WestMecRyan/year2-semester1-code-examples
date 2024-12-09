@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+body {
+  background-color: #131316;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  line-height: 100vh;
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 1px dashed white;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  border-bottom: 2px solid white;
+
+}
+
+section:first-of-type {
+  border-top: 2px solid white;
+}
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pokemon-png {
+  width: 150px;
+  height: 150px;
+  transition: all 1s;
+
+  &:nth-child(2) {
+    transition-delay: 200ms;
+  }
+
+  &:nth-child(3) {
+    transition-delay: 400ms;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}

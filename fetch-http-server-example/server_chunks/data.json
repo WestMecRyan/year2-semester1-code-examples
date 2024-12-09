@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Alice",
+    "email": "alice@example.com",
+    "messages": ["Hey, how's it going?", "Are we meeting tomorrow?"]
+  },
+  {
+    "name": "Bob",
+    "email": "bob@example.com",
+    "messages": ["Just finished the project.", "Let's catch up soon."]
+  },
+  {
+    "name": "Charlie",
+    "email": "charlie@example.com",
+    "messages": [
+      "Great job on the presentation!",
+      "Looking forward to our next discussion."
+    ]
+  },
+  {
+    "name": "David",
+    "email": "david@example.com",
+    "messages": [
+      "I'll send the files later today.",
+      "Please review them before the meeting."
+    ]
+  },
+  {
+    "name": "Eve",
+    "email": "eve@example.com",
+    "messages": ["Thanks for the invite!", "Count me in for the event."]
+  }
+]
